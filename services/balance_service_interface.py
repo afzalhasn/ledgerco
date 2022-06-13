@@ -3,6 +3,6 @@ import abc
 class BalanceServiceInterface(metaclass=abc.ABCMeta):
 
     @abc.abstractmethod
-    def addBalance(self,id,bankId,borrowerId,emiNo):
+    def addBalance(self,id,bankName,borrowerName,emiNo):
         pass
 

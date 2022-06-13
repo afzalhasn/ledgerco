@@ -5,12 +5,13 @@ class PaymentService(PaymentServiceInterface):
 
     paymentDetails = {}
 
-    def addPayment(self,id,bankId,borrowerId,lumpSumAmount,emiNo):
+    def addPayment(self,id,bankName,borrowerName,lumpSumAmount,emiNo):
         payment = Payment()
         payment.setId(id)
-        payment.setBankId(bankId)
-        payment.setBorrowerId(borrowerId)
+        payment.setBankName(bankName)
+        payment.setBorrowerName(borrowerName)
         payment.setLumpSumAmount(lumpSumAmount)
         payment.setEmiNo(emiNo)
         self.__class__.paymentDetails[id] = payment
         return payment
+
