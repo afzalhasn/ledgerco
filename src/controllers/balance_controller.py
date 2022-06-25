@@ -1,6 +1,4 @@
 import math
-from ledgerco.controllers.loan_controller import LoanController
-from ledgerco.controllers.payment_controller import PaymentController
 
 class BalanceController(object):
 
@@ -20,5 +18,6 @@ class BalanceController(object):
             if balance.getEmiNo() >= payment['emi_no']:
                 lumpsum_amount += payment['lumpSumAmount']
         total_paid = emi_amount + lumpsum_amount
+        if total_paid > total_amount: total_paid = total_amount
         remaining_emi = math.ceil((total_amount - total_paid ) / loan_details['emi_rate'])
         return [balance.getBankName(), balance.getBorrowerName(), total_paid, remaining_emi]

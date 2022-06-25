@@ -1,5 +1,5 @@
-from ledgerco.services.bank_service_interface import BankServiceInterface 
-from ledgerco.models.bank import Bank 
+from src.services.bank_service_interface import BankServiceInterface 
+from src.models.bank import Bank 
 
 class BankService(BankServiceInterface):
 

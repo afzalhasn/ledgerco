@@ -1,5 +1,5 @@
-from ledgerco.services.borrower_service_interface import BorrowerServiceInterface 
-from ledgerco.models.borrower import Borrower 
+from src.services.borrower_service_interface import BorrowerServiceInterface 
+from src.models.borrower import Borrower 
 
 class BorrowerService(BorrowerServiceInterface):
 

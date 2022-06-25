@@ -1,5 +1,5 @@
-from ledgerco.services.balance_service_interface import BalanceServiceInterface 
-from ledgerco.models.balance import Balance 
+from src.services.balance_service_interface import BalanceServiceInterface 
+from src.models.balance import Balance 
 
 class BalanceService(BalanceServiceInterface):
 

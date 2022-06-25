@@ -1,5 +1,5 @@
-from ledgerco.services.payment_service_interface import PaymentServiceInterface 
-from ledgerco.models.payment import Payment
+from src.services.payment_service_interface import PaymentServiceInterface 
+from src.models.payment import Payment
 
 class PaymentService(PaymentServiceInterface):
 

@@ -1,5 +1,5 @@
-from ledgerco.services.loan_service_interface import LoanServiceInterface 
-from ledgerco.models.loan import Loan 
+from src.services.loan_service_interface import LoanServiceInterface 
+from src.models.loan import Loan 
 
 class LoanService(LoanServiceInterface):
 
